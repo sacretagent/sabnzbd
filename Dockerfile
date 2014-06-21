@@ -15,7 +15,7 @@ ADD http://www.chuchusoft.com/par2_tbb/par2cmdline-0.4-tbb-20100203-lin64.tar.gz
 RUN tar -zxvf par2cmdline-0.4-tbb-20100203-lin64.tar.gz
 RUN rm par2cmdline-0.4-tbb-20100203-lin64.tar.gz
 RUN cp par2cmdline-0.4-tbb-20100203-lin64/par2 /usr/bin/
-RUN rm -rf par2cmdline-0.4-tbb-20100203-lin64
+#RUN rm -rf par2cmdline-0.4-tbb-20100203-lin64
 RUN chmod 777 /usr/bin/par2
 RUN chmod +x /usr/bin/par2
  
