@@ -8,7 +8,7 @@ RUN locale-gen en_US en_US.UTF-8
 RUN sudo apt-get install -y software-properties-common
 RUN add-apt-repository -y ppa:jcfp/ppa
 RUN apt-get update -q
-RUN apt-get install -qy --force-yes sabnzbdplus sabnzbdplus-theme-classic sabnzbdplus-theme-mobile sabnzbdplus-theme-plush
+RUN apt-get install -qy --force-yes sabnzbdplus sabnzbdplus-theme-classic sabnzbdplus-theme-mobile sabnzbdplus-theme-plush python-yenc unrar unzip
 
 apt-get remove --purge -y par2
 ADD http://www.chuchusoft.com/par2_tbb/par2cmdline-0.4-tbb-20100203-lin64.tar.gz par2cmdline-0.4-tbb-20100203-lin64.tar.gz
