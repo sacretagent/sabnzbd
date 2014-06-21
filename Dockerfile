@@ -10,17 +10,17 @@ RUN add-apt-repository -y ppa:jcfp/ppa
 RUN apt-get update -q
 RUN apt-get install -qy --force-yes sabnzbdplus sabnzbdplus-theme-classic sabnzbdplus-theme-mobile sabnzbdplus-theme-plush
 
-RUN apt-get remove --purge -y par2
-RUN wget http://www.chuchusoft.com/par2_tbb/par2cmdline-0.4-tbb-20100203-lin64.tar.gz
-RUN tar -zxvf par2cmdline-0.4-tbb-20100203-lin64.tar.gz
-RUN rm par2cmdline-0.4-tbb-20100203-lin64.tar.gz
-RUN par2cmdline-0.4-tbb-20100203-lin64
-RUN cp par2 /usr/bin/
-RUN cp libtbb.so* /usr/lib/
-RUN cd ~
-RUN rm -rf par2cmdline-0.4-tbb-20100203-lin64
-RUN chmod 777 /usr/bin/par2
-RUN chmod +x /usr/bin/par2
+#RUN apt-get remove --purge -y par2
+#RUN wget http://www.chuchusoft.com/par2_tbb/par2cmdline-0.4-tbb-20100203-lin64.tar.gz
+#RUN tar -zxvf par2cmdline-0.4-tbb-20100203-lin64.tar.gz
+#RUN rm par2cmdline-0.4-tbb-20100203-lin64.tar.gz
+#RUN par2cmdline-0.4-tbb-20100203-lin64
+#RUN cp par2 /usr/bin/
+#RUN cp libtbb.so* /usr/lib/
+#RUN cd ~
+#RUN rm -rf par2cmdline-0.4-tbb-20100203-lin64
+#RUN chmod 777 /usr/bin/par2
+#RUN chmod +x /usr/bin/par2
  
 VOLUME /config
 VOLUME /data
