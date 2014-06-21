@@ -8,13 +8,14 @@ RUN locale-gen en_US en_US.UTF-8
 RUN sudo apt-get install -y software-properties-common
 RUN add-apt-repository -y ppa:jcfp/ppa
 RUN apt-get update -q
-RUN apt-get install -qy --force-yes sabnzbdplus sabnzbdplus-theme-classic sabnzbdplus-theme-mobile sabnzbdplus-theme-plush libtbb2 libtbb-dev
+RUN apt-get install -qy --force-yes sabnzbdplus sabnzbdplus-theme-classic sabnzbdplus-theme-mobile sabnzbdplus-theme-plush
 
 apt-get remove --purge -y par2
 ADD http://www.chuchusoft.com/par2_tbb/par2cmdline-0.4-tbb-20100203-lin64.tar.gz par2cmdline-0.4-tbb-20100203-lin64.tar.gz
 RUN tar -zxvf par2cmdline-0.4-tbb-20100203-lin64.tar.gz
 RUN rm par2cmdline-0.4-tbb-20100203-lin64.tar.gz
 RUN cp par2cmdline-0.4-tbb-20100203-lin64/par2 /usr/bin/
+RUN cp par2cmdline-0.4-tbb-20100203-lin64/libtbb* /usr/bin
 RUN rm -rf par2cmdline-0.4-tbb-20100203-lin64
 RUN chmod 777 /usr/bin/par2
 RUN chmod +x /usr/bin/par2
