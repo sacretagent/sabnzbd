@@ -20,7 +20,7 @@ RUN cp libtbb.so* /usr/lib/
 RUN cd ~
 RUN rm -rf par2cmdline-0.4-tbb-20100203-lin64
 RUN chmod 777 /usr/bin/par2
-RUN sudo chmod +x /usr/bin/par2
+RUN chmod +x /usr/bin/par2
  
 VOLUME /config
 VOLUME /data
