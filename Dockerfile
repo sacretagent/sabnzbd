@@ -6,7 +6,8 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN locale-gen en_US en_US.UTF-8
 
 RUN sudo apt-get install -y software-properties-common
-RUN add-apt-repository -y ppa:jcfp/ppa
+RUN add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) multiverse"
+
 RUN apt-get update -q
 RUN apt-get install -qy --force-yes sabnzbdplus sabnzbdplus-theme-classic sabnzbdplus-theme-mobile sabnzbdplus-theme-plush python-yenc unrar unzip
 
