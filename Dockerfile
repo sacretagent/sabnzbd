@@ -5,6 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
  
 RUN locale-gen en_US en_US.UTF-8
 
+RUN sudo apt-get install -y python-software-properties
 RUN add-apt-repository -y ppa:jcfp/ppa
 RUN apt-get update -q
 RUN apt-get install -qy --force-yes sabnzbdplus sabnzbdplus-theme-classic sabnzbdplus-theme-mobile sabnzbdplus-theme-plush
