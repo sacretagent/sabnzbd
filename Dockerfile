@@ -17,9 +17,10 @@ RUN rm par2cmdline-0.4-tbb-20100203-lin64.tar.gz
 WORKDIR par2cmdline-0.4-tbb-20100203-lin64
 RUN cp par2 /usr/bin/
 RUN cp libtbb.so* /usr/lib/
-#RUN rm -rf par2cmdline-0.4-tbb-20100203-lin64
-#RUN chmod 777 /usr/bin/par2
-#RUN chmod +x /usr/bin/par2
+WORKDIR /
+RUN rm -rf par2cmdline-0.4-tbb-20100203-lin64
+RUN chmod 777 /usr/bin/par2
+RUN chmod +x /usr/bin/par2
  
 VOLUME /config
 VOLUME /data
