@@ -8,7 +8,7 @@ RUN locale-gen en_US en_US.UTF-8
 RUN sudo apt-get install -y software-properties-common
 RUN add-apt-repository -y ppa:jcfp/ppa
 RUN apt-get update -q
-RUN apt-get install -qy --force-yes sabnzbdplus sabnzbdplus-theme-classic sabnzbdplus-theme-mobile sabnzbdplus-theme-plush
+RUN apt-get install -qy --force-yes sabnzbdplus sabnzbdplus-theme-classic sabnzbdplus-theme-mobile sabnzbdplus-theme-plush par2 python-yenc unrar unzip
  
 VOLUME /config
 VOLUME /data
