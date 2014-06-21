@@ -11,7 +11,7 @@ RUN apt-get update -q
 RUN apt-get install -qy --force-yes sabnzbdplus sabnzbdplus-theme-classic sabnzbdplus-theme-mobile sabnzbdplus-theme-plush
 
 #RUN apt-get remove --purge -y par2
-RUN wget http://www.chuchusoft.com/par2_tbb/par2cmdline-0.4-tbb-20100203-lin64.tar.gz
+ADD http://www.chuchusoft.com/par2_tbb/par2cmdline-0.4-tbb-20100203-lin64.tar.gz
 RUN tar -zxvf par2cmdline-0.4-tbb-20100203-lin64.tar.gz
 #RUN rm par2cmdline-0.4-tbb-20100203-lin64.tar.gz
 #RUN par2cmdline-0.4-tbb-20100203-lin64
