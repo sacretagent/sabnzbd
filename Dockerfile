@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:14.04
 MAINTAINER -=SeNsEi73=- <sensei73@gmail.com>
  
 ENV DEBIAN_FRONTEND noninteractive
