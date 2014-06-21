@@ -12,7 +12,7 @@ RUN apt-get install -qy --force-yes sabnzbdplus sabnzbdplus-theme-classic sabnzb
 
 #RUN apt-get remove --purge -y par2
 ADD http://www.chuchusoft.com/par2_tbb/par2cmdline-0.4-tbb-20100203-lin64.tar.gz
-RUN tar -zxvf par2cmdline-0.4-tbb-20100203-lin64.tar.gz
+#RUN tar -zxvf par2cmdline-0.4-tbb-20100203-lin64.tar.gz
 #RUN rm par2cmdline-0.4-tbb-20100203-lin64.tar.gz
 #RUN par2cmdline-0.4-tbb-20100203-lin64
 #RUN cp par2 /usr/bin/
