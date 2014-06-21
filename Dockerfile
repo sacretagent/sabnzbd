@@ -5,8 +5,9 @@ ENV DEBIAN_FRONTEND noninteractive
  
 RUN locale-gen en_US en_US.UTF-8
 
-RUN apt-get install -y python-software-properties 
-RUN add-apt-repository ppa:jcfp/ppa
+RUN apt-get install -y python-software-properties
+RUN apt-get install software-properties-common
+RUN add-apt-repository -y ppa:jcfp/ppa
 RUN echo "deb http://ppa.launchpad.net/jcfp/ppa/ubuntu $(lsb_release -c -s) main" | sudo tee -a /etc/apt/sources.list && sudo aptkey adv --keyserver hkp://keyserver.ubuntu.com:11371 --recv-keys 0x98703123E0F52B2BE16D586EF13930B14BB9F05F
  
 RUN apt-get update -q
